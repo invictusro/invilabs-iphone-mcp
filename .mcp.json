@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "invilabs": {
+      "type": "http",
+      "url": "https://api.invilabs.io/mcp"
+    }
+  }
+}

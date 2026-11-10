@@ -1,0 +1,10 @@
+{
+  "name": "invilabs-iphone",
+  "version": "1.0.0",
+  "description": "Let Claude control real iPhones (screenshots, tap, swipe, type, open apps) through the hosted Invi Labs MCP server. No WebDriverAgent, Xcode or Mac.",
+  "author": { "name": "Invi Labs", "email": "hello@invilabs.io", "url": "https://invilabs.io" },
+  "homepage": "https://invilabs.io/developers",
+  "repository": "https://github.com/invictusro/invilabs-iphone-mcp",
+  "license": "MIT",
+  "keywords": ["iphone", "ios", "mcp", "mobile-automation", "real-device", "ai-agents"]
+}

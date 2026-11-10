@@ -1,0 +1,22 @@
+{
+  "name": "invilabs-iphone",
+  "version": "1.0.0",
+  "description": "Let Gemini CLI control real iPhones (screenshots, tap, swipe, type, open apps) with Invi Labs. No WebDriverAgent, Xcode or Mac.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Invi Labs API key",
+      "description": "Create it at panel.invilabs.io under Resources -> AI agents (MCP). It needs the Control permission.",
+      "envVar": "INVILABS_API_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "invilabs": {
+      "command": "uvx",
+      "args": ["--from", "invilabs", "invilabs-mcp"],
+      "env": { "INVILABS_API_KEY": "${INVILABS_API_KEY}" },
+      "timeout": 300000
+    }
+  }
+}

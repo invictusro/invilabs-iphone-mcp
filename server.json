@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.invilabs/iphone",
+  "title": "Invi Labs: control real iPhones",
+  "description": "Let your AI agent control real iPhones: screenshots, tap, swipe, type and open apps.",
+  "version": "0.1.13",
+  "websiteUrl": "https://invilabs.io/developers",
+  "icons": [
+    {
+      "src": "https://invilabs.io/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.invilabs.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your Invi Labs API key as a Bearer token. Create one at panel.invilabs.io under Resources \u2192 AI agents (MCP).",
+          "value": "Bearer {api_key}",
+          "isRequired": true,
+          "isSecret": true,
+          "variables": {
+            "api_key": {
+              "description": "Invi Labs API key with the device.control permission",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/invictusro/invilabs-iphone-mcp",
+    "source": "github"
+  }
+}

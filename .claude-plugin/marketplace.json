@@ -1,0 +1,15 @@
+{
+  "name": "invilabs",
+  "owner": { "name": "Invi Labs", "email": "hello@invilabs.io" },
+  "metadata": { "description": "Invi Labs plugins: let AI agents control real iPhones." },
+  "plugins": [
+    {
+      "name": "invilabs-iphone",
+      "source": "./",
+      "description": "Hosted Invi Labs MCP server plus a skill for driving real iPhones safely.",
+      "version": "1.0.0",
+      "homepage": "https://invilabs.io/developers",
+      "category": "productivity"
+    }
+  ]
+}
